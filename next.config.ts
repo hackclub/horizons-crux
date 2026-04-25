@@ -8,6 +8,7 @@ const nextConfig = {
   },
   basePath: '/horizons-crux',
   assetPrefix: '/horizons-crux/',
+  allowedDevOrigin: 'http://localhost:3000',
 };
 
 module.exports = nextConfig;
