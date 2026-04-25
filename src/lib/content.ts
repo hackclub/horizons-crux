@@ -154,7 +154,7 @@ export const FAQ_ITEMS = [
   },
   {
     q: "How do flight stipends work?",
-    a: "We provide stipends to help cover your travel costs. The exact amount depends on your location. We're committed to making attendance affordable for everyone.",
+    a: "We provide stipends to help cover your travel costs. The exact amount we give is $8.5USD per hour you spend coding after qualifying, up to the cost of your flight, visa and other transport costs.",
   },
   {
     q: "Do I need a visa to travel to Australia?",
