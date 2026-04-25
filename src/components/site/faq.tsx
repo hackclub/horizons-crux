@@ -84,7 +84,7 @@ export default function FAQ() {
                 className="pb-7 text-base leading-relaxed"
                 style={{ color: "#C1B3F7", paddingLeft: 4, paddingRight: 4 }}
               >
-                {item.a}
+                <span dangerouslySetInnerHTML={{ __html: item.a }} />
               </AccordionContent>
             </AccordionItem>
           ))}
