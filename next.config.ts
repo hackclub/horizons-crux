@@ -7,8 +7,7 @@ const nextConfig = {
     unoptimized: true
   },
   basePath: '/horizons-crux',
-  assetPrefix: '/horizons-crux/',
-  allowedDevOrigin: 'http://localhost:3000',
+  assetPrefix: '/horizons-crux/public',
 };
 
 module.exports = nextConfig;
