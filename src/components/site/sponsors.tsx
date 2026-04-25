@@ -12,7 +12,7 @@ export default function Sponsors() {
     >
       {/* Shark deco */}
       <Image
-        src="/art/shark.png"
+        src="/horizons-crux/art/shark.png"
         alt=""
         width={280}
         height={200}

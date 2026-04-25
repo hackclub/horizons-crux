@@ -49,7 +49,7 @@ export default function About() {
         style={{ left: 24, width: 140, zIndex: 1 }}
       >
         <Image
-          src="/art/anchor-chain.png"
+          src="/horizons-crux/art/anchor-chain.png"
           alt=""
           width={140}
           height={900}

@@ -18,7 +18,7 @@ export default function FAQ() {
     >
       {/* Jellyfish deco */}
       <Image
-        src="/art/jellyfish-cyan.png"
+        src="/horizons-crux/art/jellyfish-cyan.png"
         alt=""
         width={130}
         height={180}

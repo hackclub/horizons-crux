@@ -36,7 +36,7 @@ export default function Nav() {
           style={{ textDecoration: "none", borderBottom: "none" }}
         >
           <Image
-            src="/art/logo.png"
+            src="/horizons-crux/art/logo.png"
             alt=""
             width={38}
             height={28}

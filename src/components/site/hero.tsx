@@ -44,7 +44,7 @@ export default function Hero() {
       >
         {/* Logo */}
         <Image
-          src="/art/logo-crux.png"
+          src="/horizons-crux/art/logo-crux.png"
           alt="Horizons Crux"
           width={360}
           height={120}

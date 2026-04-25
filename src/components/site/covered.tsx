@@ -20,7 +20,7 @@ export default function Covered() {
     >
       {/* Jellyfish deco */}
       <Image
-        src="/art/jellyfish-yellow.png"
+        src="/horizons-crux/art/jellyfish-yellow.png"
         alt=""
         width={100}
         height={140}
