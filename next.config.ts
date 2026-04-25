@@ -6,8 +6,8 @@ const nextConfig = {
   images: {
     unoptimized: true
   },
-  basePath: '/your-repo-name',
-  assetPrefix: '/your-repo-name/',
+  basePath: '/horizons-crux',
+  assetPrefix: '/horizons-crux/',
 };
 
 module.exports = nextConfig;
