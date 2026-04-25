@@ -134,15 +134,15 @@ export const PAST_EVENTS = [
 export const FAQ_ITEMS = [
   {
     q: "How much does it cost?",
-    a: "Nothing. Horizons Crux is completely free to attend. We cover flights, accommodation, all meals, and local transport.",
+    a: "Nothing. Horizons Crux is completely free to attend. We cover flights, accommodation, and all meals.",
   },
   {
     q: "Who can attend?",
-    a: "High school students aged 13–18. You don't need to be from Australia — international attendees are welcome and we provide flight stipends.",
+    a: "High school students aged 13–18. You don't need to be from Australia, international attendees are welcome and we provide flight stipends.",
   },
   {
     q: "How do I qualify?",
-    a: "Spend 30 hours building projects on Hack Club before June 30, 2026, then submit your application at horizons.hackclub.com/crux. Your hours are tracked automatically.",
+    a: "Spend 35 hours building projects on Hack Club before July 10th, 2026, then submit your application at horizons.hackclub.com/crux. Your hours are tracked automatically.",
   },
   {
     q: "Where do I sleep?",
@@ -158,7 +158,7 @@ export const FAQ_ITEMS = [
   },
   {
     q: "Do I need a visa to travel to Australia?",
-    a: "It depends on your nationality. Check the Australian Department of Home Affairs website for requirements and apply early — processing can take time. Contact us if you need help.",
+    a: "It depends on your nationality. Check the <a href='https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-finder/visit'>Australian Department of Home Affairs</a> website for requirements and apply early, processing can take time. Contact us if you need help.",
   },
   {
     q: "Can my parents come?",
