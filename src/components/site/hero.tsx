@@ -2,6 +2,8 @@ import Image from "next/image";
 import { EVENT } from "@/lib/content";
 
 export default function Hero() {
+  const basePath = "/horizons-crux";
+
   return (
     <section
       id="top"
@@ -12,7 +14,7 @@ export default function Hero() {
       <div
         className="pointer-events-none absolute inset-0 -z-20"
         style={{
-          backgroundImage: "/public/art/hero-bg.png)",
+          backgroundImage: `url("${basePath}/art/hero-bg.png")`,
           backgroundSize: "cover",
           backgroundPosition: "center 30%",
         }}
