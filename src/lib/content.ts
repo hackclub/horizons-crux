@@ -115,19 +115,38 @@ export const PACK_LIST = [
 export const PAST_EVENTS = [
   {
     name: "Campfire",
-    tagline: "A summer of building, together.",
+    tagline: "Vermont · Summer 2024",
     blurb:
       "Hack Club's sprawling in-person hackathon — hundreds of high schoolers gathering to build projects, make friends, and ship things they're proud of.",
     href: "https://campfire.hackclub.com",
-    image: null,
   },
   {
     name: "Daydream",
-    tagline: "Dream it. Build it. Ship it.",
+    tagline: "San Francisco · Fall 2024",
     blurb:
       "Daydream brought together the next generation of builders for a weekend of wild ideas, late nights, and projects nobody expected to ship.",
     href: "https://daydream.hackclub.com",
-    image: null,
+  },
+  {
+    name: "Midnight",
+    tagline: "Vienna · January 2026",
+    blurb:
+      "A murder-mystery hackathon in Vienna, Austria. Spend 50 hours building personal projects, then fly out to solve the case — and ship something unforgettable.",
+    href: "https://midnight.hackclub.com",
+  },
+  {
+    name: "Stasis",
+    tagline: "Austin · 2025",
+    blurb:
+      "A hardware hackathon for high school builders. Solder, prototype, and ship real physical things under one roof with mentors who've shipped hardware for real.",
+    href: "https://stasis.hackclub.com",
+  },
+  {
+    name: "Scrapyard",
+    tagline: "Global · March 2025",
+    blurb:
+      "Build stupid stuff, get stupid prizes. A scrappy global hackathon run by high schoolers in 100+ cities at once — celebrating weird inventions and chaotic creativity.",
+    href: "https://scrapyard.hackclub.com",
   },
 ] as const;
 

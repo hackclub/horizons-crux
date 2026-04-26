@@ -14,7 +14,7 @@ export default function FAQ() {
     <section
       id="faq"
       className="relative overflow-hidden py-[80px] lg:py-[120px]"
-      style={{ background: "#0A0A53" }}
+      style={{ background: "#0D1117" }}
     >
       {/* Jellyfish deco */}
       <Image
