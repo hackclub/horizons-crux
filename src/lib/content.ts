@@ -115,38 +115,38 @@ export const PACK_LIST = [
 export const PAST_EVENTS = [
   {
     name: "",
-    tagline: "Global · Summer 2024",
+    tagline: "Sydney · February 2026",
     blurb:
-      "Hack Club's sprawling in-person hackathon — hundreds of high schoolers gathering to build projects, make friends, and ship things they're proud of.",
-    href: "https://campfire.hackclub.com",
+      "Sydney's largest high school hackathon yet. 200+ students from across Sydney came together for 20 hours of building, workshops, and fun.",
+    href: "https://campfire.hackclub.com/sydney",
   },
   {
     name: "",
-    tagline: "Global · Spring 2025",
+    tagline: "Sydney · September 2025",
     blurb:
-      "Daydream brought together the next generation of builders for a weekend of wild ideas, late nights, and projects nobody expected to ship.",
-    href: "https://daydream.hackclub.com",
+      "Daydream brought together the next generation of game devs for a weekend of wild ideas, late nights, and projects nobody expected to ship.",
+    href: "https://daydream.hackclub.com/sydney",
   },
   {
     name: "",
     tagline: "Vienna · January 2026",
     blurb:
-      "A murder-mystery hackathon in Vienna, Austria. Spend 50 hours building personal projects, then fly out to solve the case — and ship something unforgettable.",
+      "A murder-mystery hackathon in Vienna, Austria. Spend 50 hours building personal projects, then fly out to solve the mystery and ship something unforgettable.",
     href: "https://midnight.hackclub.com",
   },
   {
     name: "",
-    tagline: "San Fransisco · 2025",
+    tagline: "San Fransisco · July 2025",
     blurb:
       "A hardware hackathon for high school builders. Solder, prototype, and ship real physical things under one roof with mentors who've shipped hardware for real.",
     href: "https://undercity.hackclub.com",
   },
   {
     name: "",
-    tagline: "Global · March 2025",
+    tagline: "Auckland · May 2026",
     blurb:
       "Build stupid stuff, get stupid prizes. A scrappy global hackathon run by high schoolers in 100+ cities at once — celebrating weird inventions and chaotic creativity.",
-    href: "https://scrapyard.hackclub.com",
+    href: "https://kiwihacks.com",
   },
 ] as const;
 

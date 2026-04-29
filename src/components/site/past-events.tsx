@@ -7,9 +7,9 @@ import { PAST_EVENTS } from "@/lib/content";
 const CARD_STYLES: Record<string, { image: string }> = {
   Campfire: { image: asset("/art/art-1.png") },
   Daydream: { image: asset("/art/art-2.png") },
-  Midnight: { image: asset("/art/hero-bg.png") },
-  Undercity: { image: asset("https://undercity.hackclub.com/undercitylogo.svg") },
-  Scrapyard: { image: asset("/art/shark.png") },
+  Midnight: { image: asset("/art/midnight.svg") },
+  Undercity: { image: asset("/art/undercitylogo.svg") },
+  Kiwihacks: { image: asset("/art/kiwihacks.png") },
 };
 
 export default function PastEvents() {
