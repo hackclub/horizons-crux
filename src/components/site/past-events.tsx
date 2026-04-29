@@ -55,7 +55,7 @@ export default function PastEvents() {
             style={{ color: "#B9FFFF", fontWeight: 500 }}
           >
             <span className="inline-block shrink-0" style={{ width: 24, height: 1, background: "#B9FFFF" }} />
-            Previous editions
+            Previous events
           </p>
           <h2
             className="font-serif text-4xl font-bold leading-[1.05] tracking-[-0.015em] lg:text-[clamp(34px,4.4vw,56px)]"

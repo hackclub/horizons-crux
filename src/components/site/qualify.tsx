@@ -211,7 +211,7 @@ export default function Qualify() {
             className="absolute z-0"
             style={{
               right: 0,
-              top: 0,
+              top: 2 * ROW_H,
               width: 240,
               height: 240,
             }}
@@ -248,8 +248,8 @@ export default function Qualify() {
           <div
             className="absolute z-0"
             style={{
-              right: 0,
-              top: 4 * ROW_H,
+              left: 0,
+              top: 3 * ROW_H,
               width: 240,
               height: 240,
             }}
