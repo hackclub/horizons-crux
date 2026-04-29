@@ -11,6 +11,37 @@ import {
 import { FAQ_ITEMS, EVENT } from "@/lib/content";
 import Link from "next/link";
 
+function parseMarkdownLinks(text: string) {
+  const parts: (string | JSX.Element)[] = [];
+  const regex = /\[([^\]]+)\]\(([^)]+)\)/g;
+  let lastIndex = 0;
+  let match;
+
+  while ((match = regex.exec(text)) !== null) {
+    if (match.index > lastIndex) {
+      parts.push(text.slice(lastIndex, match.index));
+    }
+    parts.push(
+      <a
+        key={`link-${match.index}`}
+        href={match[2]}
+        target="_blank"
+        rel="noopener noreferrer"
+        style={{ color: "#FF7AE2", borderBottom: "1px dashed rgba(255,122,226,0.4)" }}
+      >
+        {match[1]}
+      </a>
+    );
+    lastIndex = regex.lastIndex;
+  }
+
+  if (lastIndex < text.length) {
+    parts.push(text.slice(lastIndex));
+  }
+
+  return parts.length > 0 ? parts : text;
+}
+
 export default function FAQ() {
   return (
     <section
@@ -86,7 +117,7 @@ export default function FAQ() {
                 className="pb-7 text-base leading-relaxed"
                 style={{ color: "#C1B3F7", paddingLeft: 4, paddingRight: 4 }}
               >
-                {item.a}
+                {parseMarkdownLinks(item.a)}
               </AccordionContent>
             </AccordionItem>
           ))}

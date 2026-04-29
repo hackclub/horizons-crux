@@ -161,7 +161,7 @@ export const FAQ_ITEMS = [
   },
   {
     q: "How do I qualify?",
-    a: "Spend 35 hours building projects on [horizons.hackclub.com](https://horizons.hackclub.com/) before June 30, 2026, then spend your yours to get a ticket to Horizons Crux. Your hours are tracked automatically.",
+    a: "Spend 35 hours building projects on [horizons.hackclub.com](https://horizons.hackclub.com/) before June 30, 2026, then spend your hours to get a ticket to Horizons Crux. Your hours are tracked automatically.",
   },
   {
     q: "Where do I sleep?",
