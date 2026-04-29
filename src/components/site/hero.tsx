@@ -38,7 +38,7 @@ export default function Hero() {
 
       {/* Content */}
       <div
-        className="relative mx-auto flex min-h-screen flex-col items-center justify-center px-6 pb-16 pt-16 text-center lg:px-12 lg:pb-20 lg:pt-30"
+        className="relative mx-auto flex min-h-screen flex-col items-center justify-start px-6 pb-16 pt-[80px] text-center lg:px-12 lg:pb-20 lg:pt-[120px]"
         style={{ maxWidth: 1280 }}
       >
         {/* Logo */}

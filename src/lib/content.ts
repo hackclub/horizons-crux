@@ -145,7 +145,7 @@ export const PAST_EVENTS = [
     name: "Kiwihacks",
     tagline: "Auckland · May 2026",
     blurb:
-      "The largest high school hackathon to be held in New Zealand. Where 100 teens came together to build projects and learn new skills",
+      "KiwiHacks is New Zealand's biggest hackathon run by high schoolers, for high schoolers, bringing together 100+ student innovators together for a weekend of building, workshops, and mentorship.",
     href: "https://kiwihacks.org",
   },
 ] as const;
