@@ -9,7 +9,7 @@ export const EVENT = {
   ageMin: 13,
   ageMax: 18,
   cost: "$0",
-  hoursRequired: 30,
+  hoursRequired: 35,
   email: "crux@horizons.hackclub.com",
   generalEmail: "horizons@hackclub.com",
   applyUrl: "https://horizons.hackclub.com",
@@ -42,16 +42,16 @@ export const QUALIFY_STEPS = [
   },
   {
     number: "04",
-    title: "Hit 30 Hours",
+    title: "Hit 35 Hours",
     description:
-      "Once you accumulate 30 hours of building, you're eligible to apply for Horizons Crux.",
+      "Once you accumulate 35 hours of building, you're eligible to attend Horizons Crux.",
     href: null,
   },
   {
     number: "05",
     title: "Apply",
     description:
-      "Submit your application at horizons.hackclub.com/crux before June 30, 2026.",
+      "Spend your hours for a ticket at horizons.hackclub.com before June 30, 2026.",
     href: "https://horizons.hackclub.com/crux",
   },
 ] as const;
@@ -145,7 +145,7 @@ export const PAST_EVENTS = [
     name: "Kiwihacks",
     tagline: "Auckland · May 2026",
     blurb:
-      "Build stupid stuff, get stupid prizes. A scrappy global hackathon run by high schoolers in 100+ cities at once — celebrating weird inventions and chaotic creativity.",
+      "The largest high school hackathon to be held in New Zealand. Where 100 teens came together to build projects and learn new skills",
     href: "https://kiwihacks.org",
   },
 ] as const;
@@ -161,19 +161,19 @@ export const FAQ_ITEMS = [
   },
   {
     q: "How do I qualify?",
-    a: "Spend 30 hours building projects on Hack Club before June 30, 2026, then submit your application at horizons.hackclub.com/crux. Your hours are tracked automatically.",
+    a: "Spend 35 hours building projects on [horizons.hackclub.com](https://horizons.hackclub.com/) before June 30, 2026, then spend your yours to get a ticket to Horizons Crux. Your hours are tracked automatically.",
   },
   {
     q: "Where do I sleep?",
-    a: "You'll sleep at the hackathon venue. Bring a sleeping bag! All accommodation is covered for out-of-town participants.",
+    a: "You'll sleep at the hackathon venue. Bring a sleeping bag!",
   },
   {
     q: "What should I pack?",
-    a: "A laptop and charger, sleeping bag, toiletries, a refillable water bottle, your passport and travel documents, and comfortable layers — Sydney is cold in July.",
+    a: "A laptop and charger, sleeping bag, toiletries, a refillable water bottle, your passport and travel documents, and comfortable layers since Sydney is cold in July.",
   },
   {
     q: "How do flight stipends work?",
-    a: "We provide stipends to help cover your travel costs. The exact amount depends on your location. We're committed to making attendance affordable for everyone.",
+    a: "We provide stipends to help cover your travel costs. You can earn them at a rate of $8.5USD/hr for every hour you spend coding after the initial 35 required to qualify.",
   },
   {
     q: "Do I need a visa to travel to Australia?",

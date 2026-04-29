@@ -88,14 +88,12 @@ export default function Covered() {
             {ITEMS.map(({ emoji, label, detail }) => (
               <li
                 key={label}
-                className="grid items-center gap-[18px] rounded-[20px] px-[22px] py-[18px]"
+                className="rounded-[20px] px-[22px] py-[18px]"
                 style={{
-                  gridTemplateColumns: "36px 1fr",
                   background: "rgba(13, 17, 23, 0.7)",
                   border: "1px solid rgba(193,178,247,0.18)",
                 }}
               >
-                <span style={{ fontSize: 24, lineHeight: 1 }}>{emoji}</span>
                 <span className="text-[17px]" style={{ color: "#fff" }}>
                   <b style={{ color: "#fff", fontWeight: 600 }}>{label}</b>
                   {" — "}
