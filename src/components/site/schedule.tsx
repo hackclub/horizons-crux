@@ -50,12 +50,29 @@ export default function Schedule() {
           <span className="inline-block shrink-0" style={{ width: 24, height: 1, background: "#B9FFFF" }} />
           Schedule
         </p>
-        <h2
-          className="font-serif mb-5 text-4xl font-bold leading-[1.05] tracking-[-0.015em] lg:text-[clamp(34px,4.4vw,56px)]"
-          style={{ maxWidth: "22ch" }}
-        >
-          Three days, plotted on the chart.
-        </h2>
+          <div className="relative isolate mb-5">
+            <Image
+              src={asset("/art/nautilis-decal-glow.png")}
+              alt=""
+              aria-hidden="true"
+              width={400}
+              height={400}
+              className="pointer-events-none absolute -right-2 bottom-1 hidden select-none lg:block"
+              style={{
+                zIndex: 0,
+                height: "auto",
+                width: "300px",
+                opacity: 0.9,
+                animation: "bob 6s ease-in-out infinite alternate",
+              }}
+            />
+            <h2
+              className="relative z-10 font-serif text-4xl font-bold leading-[1.05] tracking-[-0.015em] lg:text-[clamp(34px,4.4vw,56px)]"
+              style={{ maxWidth: "22ch" }}
+            >
+              Three days, plotted on the chart.
+            </h2>
+          </div>
         <p className="mb-10 text-lg leading-relaxed" style={{ color: "#C1B3F7", maxWidth: "60ch" }}>
           Outline of how the event will go! Changes might be made closer to the event.
         </p>
