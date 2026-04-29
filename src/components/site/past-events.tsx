@@ -5,7 +5,7 @@ import { asset } from "@/lib/asset";
 import { PAST_EVENTS } from "@/lib/content";
 
 const CARD_STYLES: Record<string, { image: string }> = {
-  Campfire: { image: asset("/art/art-1.png") },
+  Campfire: { image: asset("/art/art-2.png") },
   Daydream: { image: asset("/art/art-2.png") },
   Midnight: { image: asset("/art/midnight.svg") },
   Undercity: { image: asset("/art/undercitylogo.svg") },
@@ -98,9 +98,11 @@ export default function PastEvents() {
                   className="relative flex flex-1 items-center justify-center overflow-hidden"
                   style={{
                     backgroundImage: `url(${cardStyle.image})`,
-                    backgroundSize: "cover",
+                    backgroundSize: "contain",
                     backgroundPosition: "center",
                     backgroundRepeat: "no-repeat",
+                    backgroundColor: "#0f1320",
+                    padding: "20px",
                   }}
                 >
                   <div
