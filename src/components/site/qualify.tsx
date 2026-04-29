@@ -206,6 +206,25 @@ export default function Qualify() {
             })}
           </svg>
 
+          {/* light-crux-decal opposite step 1 */}
+          <div
+            className="absolute z-0"
+            style={{
+              right: 0,
+              top: 0,
+              width: 240,
+              height: 240,
+            }}
+          >
+            <Image
+              src={asset("/art/light-crux-decal.png")}
+              alt=""
+              width={240}
+              height={240}
+              style={{ display: "block" }}
+            />
+          </div>
+
           {QUALIFY_STEPS.map((step, i) => {
             const box = stepBox(i);
             return (

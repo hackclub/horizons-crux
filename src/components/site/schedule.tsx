@@ -1,3 +1,6 @@
+import Image from "next/image";
+import { asset } from "@/lib/asset";
+
 const DAYS = [
   {
     label: "Day one",
@@ -36,7 +39,7 @@ export default function Schedule() {
   return (
     <section
       id="schedule"
-      className="py-[80px] lg:py-[120px]"
+      className="relative py-[80px] lg:py-[120px]"
       style={{ background: "#0D1117" }}
     >
       <div className="mx-auto max-w-[1180px] px-7">
@@ -58,9 +61,19 @@ export default function Schedule() {
         </p>
 
         <div
-          className="mt-10 flex flex-col"
+          className="relative mt-10 flex flex-col"
           style={{ borderTop: "1px solid rgba(193,178,247,0.18)", borderBottom: "1px solid rgba(193,178,247,0.18)" }}
         >
+          <Image
+            src={asset("/art/jellyfish-decal.png")}
+            alt=""
+            aria-hidden="true"
+            width={400}
+            height={400}
+            className="pointer-events-none absolute -right-2 top-[26%] hidden h-auto w-[140px] -translate-y-1/2 select-none opacity-85 lg:block xl:-right-8 xl:w-[200px]"
+            style={{width: "350px", height: "auto"}}
+          />
+
           {DAYS.map((day, i) => (
             <div
               key={day.label}
