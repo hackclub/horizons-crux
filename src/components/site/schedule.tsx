@@ -57,7 +57,7 @@ export default function Schedule() {
           Three days, plotted on the chart.
         </h2>
         <p className="mb-10 text-lg leading-relaxed" style={{ color: "#C1B3F7", maxWidth: "60ch" }}>
-          A rough outline — final schedule lands closer to the event.
+          Outline of how the event will go! Changes might be made closer to the event.
         </p>
 
         <div
