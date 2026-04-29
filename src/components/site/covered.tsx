@@ -3,22 +3,22 @@ import { asset } from "@/lib/asset";
 
 const ITEMS = [
   {
-    emoji: "🍽️",
+    emoji: "",
     label: "All meals & snacks",
     detail: "Free meals and unlimited snacks for the event!",
   },
   {
-    emoji: "✈️",
+    emoji: "",
     label: "Flight stipends",
     detail: "At a rate of $8.50USD/hr",
   },
   {
-    emoji: "🚐",
+    emoji: "",
     label: "Local transport",
-    detail: "Airport pickups, drop-offs, day trips.",
+    detail: "Opal fares and fuel costs covered!",
   },
   {
-    emoji: "🎁",
+    emoji: "",
     label: "Event swag",
     detail: "Free Horizons Crux merch!",
   },
