@@ -8,7 +8,7 @@ const nextConfig: NextConfig = {
   images: { unoptimized: true },
   ...(isProd && {
     basePath:    "",
-    assetPrefix: "/",
+    assetPrefix: "",
   }),
   env: {
     NEXT_PUBLIC_BASE_PATH: BASE,
