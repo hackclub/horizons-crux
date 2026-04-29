@@ -63,6 +63,21 @@ export default function FAQ() {
           animation: "bob 9s ease-in-out infinite alternate-reverse",
         }}
       />
+      <Image
+        src={asset("/art/jellyfish-yellow.png")}
+        alt=""
+        aria-hidden="true"
+        width={120}
+        height={160}
+        className="pointer-events-none absolute top-[12%] right-[6%] hidden select-none lg:block"
+        style={{
+          zIndex: 1,
+          opacity: 0.85,
+          width: "150px",
+          height: "auto",
+          animation: "bob 11s ease-in-out infinite alternate-reverse",
+        }}
+      />
 
       <div
         className="relative mx-auto max-w-[880px] px-7"
