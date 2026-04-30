@@ -72,7 +72,7 @@ export default function Sponsors() {
             </h3>
             <p className="m-0 text-base" style={{ color: "#C1B3F7" }}>
               Title sponsorship, hardware partnerships, travel underwriting — let&apos;s talk. Every
-              contribution is tax-deductible in the US.
+              contribution is tax-deductible in the US and helps support the next generation of builders.
             </p>
           </div>
           <a
