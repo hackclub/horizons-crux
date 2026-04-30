@@ -35,7 +35,7 @@ export default function Covered() {
     >
       {/* Jellyfish deco */}
       <Image
-        src={asset("/art/jellyfish-yellow.png")}
+        src={asset("/art/jellyfish-pink.png")}
         alt=""
         width={100}
         height={140}
