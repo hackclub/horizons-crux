@@ -23,8 +23,8 @@ export const QUALIFY_STEPS = [
     number: "01",
     title: "Join Hack Club",
     description:
-      "Visit hackclub.com and create an account. It's free and open to all high school students.",
-    href: "https://hackclub.com",
+      "Visit [horizons.hackclub.com](https://horizons.hackclub.com) and create an account. It's free and open to all high school students.",
+    href: "https://horizons.hackclub.com",
   },
   {
     number: "02",

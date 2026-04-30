@@ -293,7 +293,7 @@ export default function Qualify() {
                   {step.title}
                 </h3>
                 <p className="m-0 text-[15px] leading-[1.55]" style={{ color: "#C1B3F7" }}>
-                  {step.description}
+                  <MarkdownText text={step.description} />
                 </p>
               </div>
             );
@@ -349,7 +349,7 @@ export default function Qualify() {
                   {step.title}
                 </h3>
                 <p className="m-0 text-[15px] leading-relaxed" style={{ color: "#C1B3F7" }}>
-                  {step.description}
+                  <MarkdownText text={step.description} />
                 </p>
               </div>
             ))}
@@ -358,4 +358,29 @@ export default function Qualify() {
       </div>
     </section>
   );
+}
+
+// Minimal inline Markdown renderer: supports links like [text](https://...)
+function MarkdownText({ text }: { text: string }) {
+  if (!text) return null;
+  const parts: Array<string | JSX.Element> = [];
+  const linkRe = /\[([^\]]+)\]\((https?:\/\/[^\s)]+)\)/g;
+  let lastIndex = 0;
+  let m: RegExpExecArray | null;
+  while ((m = linkRe.exec(text)) !== null) {
+    const idx = m.index;
+    const full = m[0];
+    const label = m[1];
+    const url = m[2];
+    if (idx > lastIndex) parts.push(text.slice(lastIndex, idx));
+    parts.push(
+      <a key={`${idx}-${url}`} href={url} target="_blank" rel="noopener noreferrer" style={{ color: "#9FECD8" }}>
+        {label}
+      </a>
+    );
+    lastIndex = idx + full.length;
+  }
+  if (lastIndex < text.length) parts.push(text.slice(lastIndex));
+
+  return <>{parts.map((p, i) => (typeof p === "string" ? <span key={i}>{p}</span> : p))}</>;
 }

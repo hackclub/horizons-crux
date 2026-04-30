@@ -153,7 +153,7 @@ export default function FAQ() {
               boxShadow: "0 6px 20px rgba(255,122,226,0.25)",
             }}
           >
-            Start qualifying →
+            Get Started! →
           </a>
         </div>
       </div>

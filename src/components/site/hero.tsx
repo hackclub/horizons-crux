@@ -73,7 +73,7 @@ export default function Hero() {
             boxShadow: "0 6px 20px rgba(255,122,226,0.25)",
           }}
         >
-          Start qualifying →
+          Sign up! →
         </a>
       </div>
     </section>
