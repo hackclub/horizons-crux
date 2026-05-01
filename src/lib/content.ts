@@ -189,7 +189,7 @@ export const FAQ_ITEMS = [
   },
   {
     q: "How do I contact you?",
-    a: "Email crux@horizons.hackclub.com, we'll help with anything from visa questions to team formation.",
+    a: "Email [crux@horizons.hackclub.com](mailto:crux@horizons.hackclub.com), we'll help with anything from visa questions to team formation.",
   },
 ] as const;
 

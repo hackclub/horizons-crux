@@ -27,7 +27,7 @@ const STEPS = [
       <>
         Once you&apos;ve cleared <b style={{ color: "#B9FFFF", fontWeight: 600 }}>35 hours</b>,
         you&apos;re in. We fly you out to Sydney, Australia for a weekend under the
-        Southern Cross. Bring a laptop.
+        Southern Cross. Bring a laptop and a sleeping bag.
       </>
     ),
   },
