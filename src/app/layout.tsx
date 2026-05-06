@@ -23,18 +23,18 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Horizons Crux — Chart your own horizon · Sydney, July 10–12, 2026",
+  title: "Horizons Crux: Sydney, July 10 to 12, 2026",
   description:
-    "A free 3-day hackathon in Sydney, Australia for high school builders aged 13–18. July 10–12, 2026. Flights, accommodation, and meals fully covered.",
+    "A free 3-day hackathon in Sydney, Australia for high school builders aged 13 to 18. July 10 to 12, 2026. Flights, accommodation, and meals fully covered.",
   icons: {
     icon: "/art/icon.png",
     shortcut: "/art/icon.png",
     apple: "/art/icon.png",
   },
   openGraph: {
-    title: "Horizons Crux — Chart your own horizon · Sydney, July 10–12, 2026",
+    title: "Horizons Crux: Sydney, July 10 to 12, 2026",
     description:
-      "A free 3-day hackathon in Sydney, Australia for high school builders aged 13–18.",
+      "A free 3-day hackathon in Sydney, Australia for high school builders aged 13 to 18.",
     url: "https://horizons.hackclub.com",
     siteName: "Horizons Crux",
     locale: "en_AU",

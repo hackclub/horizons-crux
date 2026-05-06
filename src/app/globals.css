@@ -65,7 +65,7 @@
   /* Motion */
   --ease-out: cubic-bezier(.2,.7,.2,1);
 
-  /* shadcn tokens — mapped to the dark palette */
+  /* shadcn tokens: mapped to the dark palette */
   --background: #2F2F4D;
   --foreground: #FFFFFF;
   --card: #1c1a28;

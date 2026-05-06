@@ -1,117 +1,222 @@
 import Image from "next/image";
+import {
+  ABOUT_TAGLINE,
+  ABOUT_BUBBLES,
+  ABOUT_FEATURE_CARDS,
+  QUALIFY_STEPS,
+} from "@/lib/content";
 import { asset } from "@/lib/asset";
 
-const STEPS = [
-  {
-    num: "01",
-    title: "Sign up for Horizons.",
-    body: (
-      <>
-        Join <a href="https://horizons.hackclub.com" target="_blank" rel="noopener noreferrer" style={{ color: "#B9FFFF", fontWeight: 600 }}>Hack Club Horizons</a> to start your journey towards Horizons Crux. Doesn't matter how much coding experience you have, just sign up and start building. It’s free and open to all high school students.
-      </>
-    ),
-  },
-  {
-    num: "02",
-    title: "Build Cool Projects.",
-    body: (
-      <>
-        Log <b style={{ color: "#B9FFFF", fontWeight: 600 }}>35 hours</b> in <a href="https://horizons.hackclub.com" target="_blank" rel="noopener noreferrer" style={{ color: "#B9FFFF", fontWeight: 600 }}>Hack Club Horizons</a> building whatever you desire. A game, a website, a synth, a robot... every hour is another step closer towards the Horizons.
-      </>
-    ),
-  },
-  {
-    num: "03",
-    title: "Fly out to Sydney.",
-    body: (
-      <>
-        Once you&apos;ve cleared <b style={{ color: "#B9FFFF", fontWeight: 600 }}>35 hours</b>,
-        you&apos;re in. We fly you out to Sydney, Australia for a weekend under the
-        Southern Cross. Bring a laptop and a sleeping bag.
-      </>
-    ),
-  },
-];
+function Hex({ size = 18, className = "", style }: { size?: number; className?: string; style?: React.CSSProperties }) {
+  return (
+    <span
+      aria-hidden="true"
+      className={className}
+      style={{
+        display: "inline-block",
+        width: size,
+        height: size,
+        background: "linear-gradient(180deg, #FF7AE2 0%, #C1B3F7 100%)",
+        clipPath: "polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%)",
+        ...style,
+      }}
+    />
+  );
+}
 
 export default function About() {
   return (
     <section
       id="about"
-      className="relative py-[80px] lg:py-[120px]"
-      style={{ background: "linear-gradient(180deg, #0D1117 0%, #0a0b0f 100%)" }}
+      className="relative overflow-hidden py-[100px] lg:py-[140px]"
+      style={{
+        background:
+          "linear-gradient(180deg, #0D1117 0%, #0D1117 100%)",
+      }}
     >
-      <div className="relative mx-auto flex max-w-[1180px] gap-0 px-[22px] lg:items-start lg:px-7">
-        {/* Anchor chain — full-viewport sticky rail on desktop */}
-        <div className="pointer-events-none hidden lg:sticky lg:top-0 lg:flex lg:h-screen lg:w-[170px] lg:shrink-0 lg:items-center lg:justify-center">
-          <Image
-            src={asset("/art/anchor-chain.png")}
-            alt=""
-            width={549}
-            height={1537}
-            className="h-screen w-auto max-w-none object-contain object-top"
-            style={{
-              transformOrigin: "top center",
-              filter: "drop-shadow(0 12px 40px rgba(255,122,226,0.25))",
-              animation: "anchorSway 7s ease-in-out infinite alternate",
-            }}
-          />
-        </div>
+      <div className="mx-auto max-w-[1180px] px-[22px] lg:px-7">
+        {/* ABOUT heading */}
+        <h2
+          className="font-serif mb-12 text-center text-[28px] font-bold uppercase tracking-[0.28em] lg:text-[32px]"
+          style={{ color: "#B9FFFF" }}
+        >
+          About
+        </h2>
 
-        {/* Right column */}
-        <div className="relative flex-1 lg:pl-10 lg:pr-7" style={{ zIndex: 2 }}>
-          {/* Head */}
-          <div className="mb-8 max-w-[60ch] lg:mb-14">
-            <p
-              className="mb-[14px] flex items-center gap-[10px] text-[12px] uppercase tracking-[0.22em]"
-              style={{ color: "#B9FFFF", fontWeight: 500 }}
-            >
-              About the event
-            </p>
-            <h2
-              className="font-serif mb-5 text-4xl font-bold leading-[1.05] tracking-[-0.015em] lg:text-5xl"
-              style={{ letterSpacing: "-0.015em" }}
-            >
-              A weekend in the deep end.
-            </h2>
-            <p className="text-lg leading-relaxed" style={{ color: "#C1B3F7" }}>
-              Three steps from your bedroom to the Southern Cross. Horizons Crux is a 3-day
-              hackathon in Sydney, fully funded by Hack Club, a 501(c)(3) nonprofit.
-            </p>
-          </div>
+        {/* Big tagline with highlight swatches */}
+        <p
+          className="font-serif mx-auto mb-20 text-center font-bold leading-[1.18] lg:mb-24"
+          style={{
+            fontSize: "clamp(28px, 4.4vw, 56px)",
+            color: "#fff",
+            letterSpacing: "-0.015em",
+            maxWidth: "20ch",
+          }}
+        >
+          {ABOUT_TAGLINE.map((seg, i) => {
+            if (seg.highlight) {
+              return (
+                <span
+                  key={i}
+                  className="bg-highlight"
+                  style={{
+                    background: "linear-gradient(180deg, transparent 55%, rgba(255,122,226,0.35) 55%)",
+                    padding: "0 6px",
+                    borderRadius: 4,
+                  }}
+                >
+                  {seg.text}
+                </span>
+              );
+            }
+            if (seg.italic) {
+              return (
+                <em key={i} style={{ fontStyle: "italic", color: "#FF7AE2" }}>
+                  {seg.text}
+                </em>
+              );
+            }
+            return <span key={i}>{seg.text}</span>;
+          })}
+        </p>
 
-          {/* Steps */}
-          <ol className="m-0 list-none p-0">
-            {STEPS.map((step, i) => (
-              <li
-                key={step.num}
-                className="grid items-start gap-2 py-7 lg:grid-cols-[120px_1fr] lg:gap-10 lg:py-10"
+        {/* Why Join — bubbles + hex cluster */}
+        <div className="relative mx-auto mb-20 max-w-[820px] lg:mb-24">
+          <div className="flex flex-wrap items-center justify-center gap-3 lg:gap-5">
+            {ABOUT_BUBBLES.map((b, i) => (
+              <span
+                key={i}
+                className={`inline-flex items-center justify-center font-semibold ${b.primary ? "px-7 py-3 text-[18px] lg:text-[22px]" : "px-5 py-2 text-[14px] lg:text-[16px]"}`}
                 style={{
-                  borderTop: "1px solid rgba(193,178,247,0.18)",
-                  borderBottom: i === STEPS.length - 1 ? "1px solid rgba(193,178,247,0.18)" : undefined,
+                  borderRadius: 999,
+                  background: b.primary ? "rgba(185,255,255,0.14)" : "rgba(193,178,247,0.12)",
+                  border: `1px solid ${b.primary ? "rgba(185,255,255,0.45)" : "rgba(193,178,247,0.35)"}`,
+                  color: b.primary ? "#B9FFFF" : "#fff",
+                  transform: `rotate(${b.rotate}deg)`,
+                  fontFamily: "var(--font-serif)",
+                  letterSpacing: "-0.005em",
                 }}
               >
-                <span
-                  className="font-serif text-4xl font-bold italic leading-none lg:text-[56px]"
-                  style={{ color: "#FF7AE2", letterSpacing: "-0.02em" }}
-                >
-                  {step.num}
-                </span>
-                <div>
-                  <h3
-                    className="font-serif mt-1 mb-3 text-2xl font-bold leading-[1.1] lg:text-3xl"
-                    style={{ letterSpacing: "-0.01em", color: "#fff" }}
-                  >
-                    {step.title}
-                  </h3>
-                  <p className="m-0 text-[18px] leading-[1.65]" style={{ color: "#C1B3F7", maxWidth: "60ch" }}>
-                    {step.body}
-                  </p>
-                </div>
-              </li>
+                {b.label}
+              </span>
             ))}
-          </ol>
+          </div>
+
+          {/* Decorative hexagons */}
+          <Hex size={22} style={{ position: "absolute", top: -8, left: "8%", transform: "rotate(15deg)", opacity: 0.7 }} />
+          <Hex size={14} style={{ position: "absolute", top: 30, right: "12%", transform: "rotate(-10deg)", opacity: 0.55 }} />
+          <Hex size={18} style={{ position: "absolute", bottom: -6, left: "30%", transform: "rotate(8deg)", opacity: 0.6 }} />
+          <Hex size={12} style={{ position: "absolute", bottom: 20, right: "30%", transform: "rotate(-18deg)", opacity: 0.5 }} />
+        </div>
+
+        {/* Three feature cards */}
+        <div className="grid gap-5 md:grid-cols-3">
+          {ABOUT_FEATURE_CARDS.map((card) => (
+            <div
+              key={card.title}
+              className="overflow-hidden rounded-[20px]"
+              style={{
+                background: "#1c1a28",
+                border: "1px solid rgba(193,178,247,0.18)",
+                boxShadow: "0 8px 30px -12px rgba(13,17,23,0.6)",
+              }}
+            >
+              <div className="px-6 pt-6 pb-3">
+                <p
+                  className="font-serif text-[18px] font-bold leading-[1.25] lg:text-[20px]"
+                  style={{ color: "#fff", letterSpacing: "-0.01em" }}
+                >
+                  {card.title}
+                </p>
+              </div>
+              <div
+                className="relative h-[180px] w-full overflow-hidden lg:h-[200px]"
+                style={{ background: "#0D1117" }}
+              >
+                <Image
+                  src={asset(card.image)}
+                  alt={card.alt}
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                />
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Qualify steps strip */}
+        <div
+          id="qualify"
+          className="mt-20 rounded-[24px] px-6 py-10 lg:mt-24 lg:px-12 lg:py-14"
+          style={{
+            background:
+              "radial-gradient(ellipse at 80% 0%, rgba(82,88,228,0.18) 0%, transparent 50%), rgba(28,26,40,0.6)",
+            border: "1px solid rgba(193,178,247,0.18)",
+          }}
+        >
+          <p
+            className="mb-3 text-center text-[12px] uppercase tracking-[0.22em]"
+            style={{ color: "#B9FFFF", fontWeight: 500 }}
+          >
+            How to qualify
+          </p>
+          <h3
+            className="font-serif mx-auto mb-10 text-center text-[28px] font-bold leading-[1.1] lg:text-[40px]"
+            style={{ color: "#fff", letterSpacing: "-0.015em", maxWidth: "20ch" }}
+          >
+            Three steps to the Cross.
+          </h3>
+          <div className="grid gap-6 md:grid-cols-3">
+            {QUALIFY_STEPS.map((step) => (
+              <div key={step.number} className="flex flex-col items-start">
+                <span
+                  className="mb-3 inline-flex h-10 w-10 items-center justify-center rounded-full font-mono text-[14px] font-bold"
+                  style={{
+                    background: "#FF7AE2",
+                    color: "#0D1117",
+                  }}
+                >
+                  {step.number}
+                </span>
+                <h4
+                  className="font-serif mb-2 text-[20px] font-bold"
+                  style={{ color: "#fff", letterSpacing: "-0.01em" }}
+                >
+                  {step.title}
+                </h4>
+                <p className="m-0 text-[14px] leading-[1.6]" style={{ color: "#C1B3F7" }}>
+                  <Markdown text={step.description} />
+                </p>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>
   );
+}
+
+function Markdown({ text }: { text: string }) {
+  const parts: React.ReactNode[] = [];
+  const re = /\[([^\]]+)\]\(([^)]+)\)/g;
+  let last = 0;
+  let m: RegExpExecArray | null;
+  while ((m = re.exec(text)) !== null) {
+    if (m.index > last) parts.push(text.slice(last, m.index));
+    parts.push(
+      <a
+        key={m.index}
+        href={m[2]}
+        target="_blank"
+        rel="noreferrer"
+        style={{ color: "#FF7AE2", borderBottom: "1px dashed rgba(255,122,226,0.4)" }}
+      >
+        {m[1]}
+      </a>
+    );
+    last = re.lastIndex;
+  }
+  if (last < text.length) parts.push(text.slice(last));
+  return <>{parts}</>;
 }
