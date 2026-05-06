@@ -59,6 +59,10 @@ export default function Hero() {
           {EVENT.city} · Jul 10 – 12, {EVENT.year}
         </p>
 
+        <p className="max-w-100 mb-[22px]">
+          A Hack Club flagship hackathon, in Sydney Australia. Code for 35 hours and come to Australia for 48 hours of learning, teamwork, and fun!
+        </p>
+
         {/* CTA — self-start prevents stretching to full width */}
         <a
           href={EVENT.applyUrl}
