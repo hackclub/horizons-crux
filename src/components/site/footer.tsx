@@ -4,31 +4,11 @@ import { asset } from "@/lib/asset";
 
 export default function Footer() {
   return (
+    <>
     <footer
-      className="relative overflow-hidden pb-10 pt-24"
-      style={{
-        backgroundImage: `url(${asset("/art/body-bg.png")})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center center",
-        backgroundAttachment: "fixed",
-      }}
+      className="pb-10 pt-24"
     >
-      {/* Subtle dark overlay so text stays readable */}
-      <div
-        className="pointer-events-none absolute inset-0"
-        style={{ background: "rgba(5,6,10,0.45)" }}
-      />
-
-      {/* Fade in from the dark section above */}
-      <div
-        className="pointer-events-none absolute inset-x-0 top-0"
-        style={{
-          height: "180px",
-          background: "linear-gradient(180deg, #0D1117 0%, rgba(13,17,23,0) 100%)",
-        }}
-      />
-
-      <div className="relative mx-auto max-w-[1180px] px-7" style={{ zIndex: 2 }}>
+      <div className="mx-auto max-w-[1180px] px-7">
         <div className="mb-14 grid gap-12 sm:grid-cols-2 lg:grid-cols-[1.5fr_1fr_1fr_1fr]">
 
           {/* Brand */}
@@ -148,5 +128,13 @@ export default function Footer() {
         </div>
       </div>
     </footer>
+      <Image
+        src={asset("/art/body-bg.png")}
+        alt=""
+        width={1920}
+        height={1080}
+        className="w-full"
+      />
+    </>
   );
 }
