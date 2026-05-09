@@ -116,20 +116,11 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Bottom bar */}
-        <div
-          className="flex flex-wrap items-center justify-between gap-5 pt-7 text-[13px]"
-          style={{
-            borderTop: "1px solid rgba(193,178,247,0.18)",
-            color: "#8689C7",
-          }}
-        >
-          <span>© 2026 {HACKCLUB.name}</span>
-        </div>
+        
       </div>
     </footer>
       <Image
-        src={asset("/art/body-bg.png")}
+        src={asset("/art/footer3.png")}
         alt=""
         width={1920}
         height={1080}
