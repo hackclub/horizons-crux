@@ -120,7 +120,7 @@ export default function Footer() {
       </div>
     </footer>
       <Image
-        src={asset("/art/footer3.png")}
+        src={asset("/art/footer4.png")}
         alt=""
         width={1920}
         height={1080}
