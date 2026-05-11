@@ -39,6 +39,9 @@ export const metadata: Metadata = {
     siteName: "Horizons Crux",
     locale: "en_AU",
     type: "website",
+    images: [
+      { url: "/art/logo-crux.png", alt: "Horizons Crux preview image" }
+    ],
   },
 };
 
