@@ -1,3 +1,5 @@
+import { ReactLenis } from "lenis/react";
+
 import Nav from "@/components/site/nav";
 import Hero from "@/components/site/hero";
 import About from "@/components/site/about";
@@ -11,7 +13,7 @@ import Footer from "@/components/site/footer";
 
 export default function Home() {
   return (
-    <>
+    <ReactLenis root>
       <Nav />
       <main>
         <Hero />
@@ -24,6 +26,6 @@ export default function Home() {
         <Sponsors />
       </main>
       <Footer />
-    </>
+    </ReactLenis>
   );
 }
