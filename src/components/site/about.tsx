@@ -146,7 +146,7 @@ export default function About() {
                 className="m-0 text-[17px] leading-[1.7]"
                 style={{ color: "#C1B3F7", maxWidth: "58ch" }}
               >
-                Three steps from your bedroom to the Southern Cross. Horizons
+                Five steps from your bedroom to the Southern Cross. Horizons
                 Crux is a 3-day hackathon in Sydney, fully funded by Hack Club,
                 a 501(c)(3) nonprofit.
               </p>
