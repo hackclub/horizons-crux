@@ -6,9 +6,9 @@ const DAYS = [
     label: "Day one",
     date: "Friday, July 10",
     items: [
-      { time: "1:00pm", event: "Doors open", desc: "Check-in, set up base, chill before the opening ceremony." },
-      { time: "3:00pm", event: "Opening ceremony", desc: "Welcome, sponsors, kickoff." },
-      { time: "3:30pm", event: "Hacking begins", desc: "Form teams, brainstorm ideas." },
+      { time: "3:00pm", event: "Doors open", desc: "Check-in, set up base, chill before the opening ceremony." },
+      { time: "4:00pm", event: "Opening ceremony", desc: "Welcome, sponsors, kickoff." },
+      { time: "4:30pm", event: "Hacking begins", desc: "Form teams, brainstorm ideas." },
       { time: "7:00pm", event: "Dinner + lightning talks", desc: "Fuel up for the night ahead." },
     ],
   },
