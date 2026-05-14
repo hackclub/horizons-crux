@@ -2,43 +2,15 @@
 const logo = "/logo.png";
 ---
 
-<nav>
-  <img id="nav-logo" src={logo} />
+<nav
+    class="inline-flex pl-2.5 pr-2.5 items-center  min-w-full bg-[#0a0a53]"
+>
+    <img id="nav-logo" class="h-30" src={logo} />
 
-  <div id="nav-links">
-    <a href="#about">About</a>
-    <a href="#faq">FAQ</a>
-    <a href="#qualify">Qualify</a>
-    <a href="#sponsors">Sponsors</a>
-  </div>
+    <div id="nav-links" class="flex items-end gap-9 ml-auto text-white">
+        <a href="#about">About</a>
+        <a href="#faq">FAQ</a>
+        <a href="#qualify">Qualify</a>
+        <a href="#sponsors">Sponsors</a>
+    </div>
 </nav>
-
-<style>
-  nav {
-    display: inline-flex;
-    padding: 10px 20px;
-    align-items: center;
-    gap: 36px;
-    background: #0a0a53;
-    width: 100%;
-    box-sizing: border-box;
-  }
-
-  #nav-logo {
-    height: 120px;
-    aspect-ratio: 127/74;
-
-    filter: drop-shadow(0 12px 40px rgba(185, 255, 255, 0.4));
-  }
-
-  #nav-links {
-    display: flex;
-    align-items: flex-end;
-    gap: 36px;
-    margin-left: auto;
-  }
-  #nav-links a {
-    color: white;
-    text-decoration: none;
-  }
-</style>
