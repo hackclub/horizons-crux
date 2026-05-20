@@ -3,22 +3,18 @@ import { asset } from "@/lib/asset";
 
 const ITEMS = [
   {
-    emoji: "",
     label: "All meals & snacks",
     detail: "Free meals and unlimited snacks for the event!",
   },
   {
-    emoji: "",
     label: "Flight stipends",
     detail: "At a rate of $8.50USD/hr",
   },
   {
-    emoji: "",
     label: "Local transport",
     detail: "Opal fares and fuel costs covered!",
   },
   {
-    emoji: "",
     label: "Event swag",
     detail: "Free Hoodies, Hats, PCB Lanyards, Everything you can think of.",
   },
@@ -79,9 +75,9 @@ export default function Covered() {
             </p>
           </div>
 
-          {/* Right — emoji list */}
+          {/* Right — covered list */}
           <ul className="m-0 flex list-none flex-col gap-[14px] p-0">
-            {ITEMS.map(({ emoji, label, detail }) => (
+            {ITEMS.map(({ label, detail }) => (
               <li
                 key={label}
                 className="rounded-[20px] px-[22px] py-[18px]"

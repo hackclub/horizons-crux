@@ -6,14 +6,7 @@ const SECTIONS = [
     title: "What is a hackathon.",
     body: (
       <>
-        <p className="m-0 mb-3">
-          A hackathon is a weekend-long event where you build something from
-          scratch with a group of strangers who quickly become friends.
-        </p>
-        <p className="m-0">
-          At Horizons Crux, you&apos;ll have around 48 hours to make a project, then show the room what you made. No polished demos,
-          no slides. Just a thing that you built yourself.
-        </p>
+        Join <a href="https://horizons.hackclub.com/?utm_source=crux-site" target="_blank" rel="noopener noreferrer" style={{ color: "#B9FFFF", fontWeight: 600 }}>Hack Club Horizons</a> to start your journey towards Horizons Crux. Doesn&apos;t matter how much coding experience you have, just sign up and start building. It’s free and open to all high school students.
       </>
     ),
   },
