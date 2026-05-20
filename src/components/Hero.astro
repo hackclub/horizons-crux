@@ -1,16 +1,27 @@
 ---
 import "../styles/global.css";
 const logo = "/logo.png";
+import { Image } from "astro:assets";
 ---
 
 <div
   id="hero"
   class="flex flex-col items-center h-screen bg-[url(/hero-bg.png)] bg-cover bg-no-repeat text-white"
 >
-  <img id="hero-logo" src={logo} class="mt-20 w-100" />
+  <div class="flex flex-col items-center w-full h-full bg-black/20">
+    <Image
+      src={logo}
+      alt="Horizons Crux logo"
+      width={400}
+      height={100}
+      loading="eager"
+      class="py-4 block"
+    />
 
-  <p class="w-100 text-center">
-    A Hack Club flagship hackathon, in Sydney, Australia. Code for 35 hours and
-    come to Australia for 48 hours of learning, teamwork, and fun!
-  </p>
+    <p class="w-100
+    text-center">
+      A Hack Club flagship hackathon, in Sydney, Australia. Code for 35 hours
+      and come to Australia for 48 hours of learning, teamwork, and fun!
+    </p>
+  </div>
 </div>
