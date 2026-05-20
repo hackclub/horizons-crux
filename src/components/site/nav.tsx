@@ -7,10 +7,10 @@ import { asset } from "@/lib/asset";
 
 const NAV_ITEMS = [
   { id: "about", label: "About" },
-  { id: "past", label: "Past events" },
   { id: "qualify", label: "Qualify" },
   { id: "schedule", label: "Schedule" },
   { id: "sponsors", label: "Sponsors" },
+  { id: "past", label: "Past events" },
   { id: "faq", label: "FAQ" },
 ];
 
