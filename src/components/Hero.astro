@@ -3,12 +3,14 @@ import "../styles/global.css";
 const logo = "/logo.png";
 ---
 
-<div id="hero" class="min-h-full">
-    <img id="hero-logo" src={logo} class="w-100" />
-</div>
+<div
+  id="hero"
+  class="flex flex-col items-center h-screen bg-[url(/hero-bg.png)] bg-cover bg-no-repeat text-white"
+>
+  <img id="hero-logo" src={logo} class="mt-20 w-100" />
 
-<style>
-    #hero {
-        background-image: url("/hero-bg.png");
-    }
-</style>
+  <p class="w-100 text-center">
+    A Hack Club flagship hackathon, in Sydney, Australia. Code for 35 hours and
+    come to Australia for 48 hours of learning, teamwork, and fun!
+  </p>
+</div>
