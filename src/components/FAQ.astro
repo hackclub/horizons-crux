@@ -1,6 +1,22 @@
+---
+const faqItems = [
+["hi", "yes"],
+["bye", "no"]
+];
+---
 <div
   id="faq"
   class="flex flex-col items-center h-screen bg-[url(/faq_bg.png)] bg-cover bg-no-repeat text-white"
 >
   <h2 class="font-bold">FAQ</h2>
+  {
+  faqItems.map( (item) => {
+  return (
+  <div id="faq-item" class="bg-blue-300 p-10 m-4 rounded-s w-40">
+    <h3 class="font-bold">{item[0]}</h3>
+    <p>{item[1]}</p>
+  </div>
+    )
+  })
+  }
 </div>
