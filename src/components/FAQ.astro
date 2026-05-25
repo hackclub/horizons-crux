@@ -1,22 +1,107 @@
 ---
 const faqItems = [
-["hi", "yes"],
-["bye", "no"]
+  {
+    question: "What is Horizons Crux?",
+    answer: "Horizons Crux is a flagship hackathon run by Hack Club (a 501(c)(3) nonprofit that supports high school coders), running from July 10-12 in Sydney this year!",
+    hasHTML: false
+  },
+  {
+    question: "How do I qualify?",
+    answer: `Qualify for Crux by creating projects and tracking the time you spend coding on <a href="https://horizons.hackclub.com/crux" class="text-blue-400 hover:underline">horizons.hackclub.com</a>!`,
+    hasHTML: true
+  },
+  {
+    question: "Is there a cost to participate?",
+    answer: "Nope! Horizons Crux is free to attend! We'll provide free food and snacks throughout the event too! We also offer hour-based flight stipends at a rate of $8.50 USD per hour you code.",
+    hasHTML: false
+  },
+  {
+    question: "I don't know how to code! Can I come?",
+    answer: "Absolutely! We'll be running workshops to teach you how to build games, websites, and more!",
+    hasHTML: false
+  },
+  {
+    question: "Am I eligible?",
+    answer: "Horizons Crux is open to teens aged 13-18, anywhere in the world!",
+    hasHTML: false
+  },
+  {
+    question: "I have more questions!",
+    answer: `No problem! Send us an email at <a href="mailto:crux@hackclub.com" class="text-blue-400 hover:underline">crux@hackclub.com</a>`,
+    hasHTML: true
+  }
 ];
 ---
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const items = document.querySelectorAll('.faq-item');
+    items.forEach(item => {
+      const button = item.querySelector('.faq-question');
+      button?.addEventListener('click', () => {
+        item.classList.toggle('expanded');
+      });
+    });
+  });
+</script>
+
+<style>
+  .faq-item {
+    transition: all 0.3s ease;
+  }
+  
+  .faq-item .faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.3s ease;
+  }
+  
+  .faq-item.expanded .faq-answer {
+    max-height: 400px;
+    opacity: 1;
+  }
+  
+  .faq-item .faq-question {
+    cursor: pointer;
+  }
+  
+  .faq-item .faq-question::after {
+    content: '+';
+    float: right;
+    font-size: 1.5rem;
+    transition: transform 0.3s ease;
+  }
+  
+  .faq-item.expanded .faq-question::after {
+    transform: rotate(45deg);
+  }
+</style>
+
 <div
   id="faq"
-  class="flex flex-col items-center h-screen bg-[url(/faq_bg.png)] bg-cover bg-no-repeat text-white"
+  class="w-full min-h-screen py-20 px-4 bg-cover bg-center bg-no-repeat text-white relative"
+  style="background-image: url('/faq_bg.png');"
 >
-  <h2 class="font-bold">FAQ</h2>
-  {
-  faqItems.map( (item) => {
-  return (
-  <div id="faq-item" class="bg-blue-300 p-10 m-4 rounded-s w-40">
-    <h3 class="font-bold">{item[0]}</h3>
-    <p>{item[1]}</p>
+  <div class="absolute inset-0 bg-black/20"></div>
+  <div class="max-w-3xl mx-auto relative z-10">
+    <div class="text-center mb-16">
+      <h2 class="text-5xl font-bold mb-4">FAQ</h2>
+    </div>
+
+    <div class="space-y-4">
+      {
+        faqItems.map((item) => (
+          <div class="faq-item bg-slate-700/80 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+            <button class="faq-question w-full text-left px-6 py-4 font-semibold text-lg transition-colors">
+              {item.question}
+            </button>
+            <div class="faq-answer px-6 pb-4 text-slate-200">
+              {item.hasHTML ? <div set:html={item.answer} /> : item.answer}
+            </div>
+          </div>
+        ))
+      }
+    </div>
   </div>
-    )
-  })
-  }
 </div>
