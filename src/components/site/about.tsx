@@ -11,8 +11,10 @@ const SECTIONS = [
           scratch with a group of strangers who quickly become friends.
         </p>
         <p className="m-0">
-          At Horizons Crux, you&apos;ll have around 48 hours to make a project, then show the room what you made. No polished demos,
-          no slides. Just a thing that you built yourself.
+          At Horizons Crux, you&apos;ll have around 48 hours to make a project,
+          then show everyone what you made. You&apos;ll leave with a project
+          anyone can demo, and you get to tell people that you built it
+          yourself.
         </p>
       </>
     ),
@@ -22,7 +24,7 @@ const SECTIONS = [
     body: (
       <>
         <p className="m-0 mb-3">
-          Any high school student who&apos;s logged{" "}
+          Any high school student (aged 13-18) who&apos;s logged{" "}
           <b style={{ color: "#B9FFFF", fontWeight: 600 }}>35 hours</b> building
           projects on{" "}
           <a
@@ -36,9 +38,8 @@ const SECTIONS = [
           .
         </p>
         <p className="m-0">
-          No experience cap, beginners who just shipped their first project are
-          just as welcome as seasoned coders. If you&apos;re in high school and
-          you&apos;ve put in the hours, you&apos;re in.
+          Crux is open to students of all experience levels! We&apos;ll have
+          workshops to teach beginners how to make games, websites, and more!
         </p>
       </>
     ),
@@ -49,8 +50,8 @@ const SECTIONS = [
       <>
         <p className="m-0 mb-3">
           Your food and accommodation are{" "}
-          <b style={{ color: "#B9FFFF", fontWeight: 600 }}>fully covered</b>{" "}
-          by Hack Club, a 501(c)(3) nonprofit.
+          <b style={{ color: "#B9FFFF", fontWeight: 600 }}>fully covered</b> by
+          Hack Club, a 501(c)(3) nonprofit.
         </p>
         <p className="m-0">
           You&apos;ll leave with a project you&apos;re proud of, a network of
@@ -69,14 +70,16 @@ export default function About() {
       <section
         id="about"
         className="relative overflow-hidden py-[100px] lg:py-[140px]"
-        style={{ background: "linear-gradient(180deg, #0D1117 0%, #0D1117 100%)" }}
+        style={{
+          background: "linear-gradient(180deg, #0D1117 0%, #0D1117 100%)",
+        }}
       >
         <div className="mx-auto max-w-[860px] px-6 text-center">
           <h2
-            className="font-serif text-[2.4rem] font-bold leading-[1.2] sm:text-5xl lg:text-[3.5rem]"
+            className="font-serif text-[2rem] font-bold leading-[1.2] sm:text-4xl lg:text-[3rem]"
             style={{ color: "#f0ede6", letterSpacing: "-0.02em" }}
           >
-            Horizons Crux is Hack Club&apos;s{" "}
+            A Hack Club flagship hackathon, in Sydney,{" "}
             <mark
               style={{
                 background: "rgba(185, 255, 255, 0.15)",
@@ -85,19 +88,20 @@ export default function About() {
                 borderRadius: "3px",
               }}
             >
-              free hackathon
-            </mark>{" "}
-            for high schoolers who are ready to{" "}
-            <mark
-              style={{
-                background: "rgba(185, 255, 255, 0.15)",
-                color: "#B9FFFF",
-                padding: "2px 0",
-                borderRadius: "3px",
-              }}
-            >
-              ship something real.
+              Australia
             </mark>
+            . Code for{" "}
+            <mark
+              style={{
+                background: "rgba(185, 255, 255, 0.15)",
+                color: "#B9FFFF",
+                padding: "2px 0",
+                borderRadius: "3px",
+              }}
+            >
+              35 hours
+            </mark>
+            {" "}and come to Australia for 48 hours of learning, teamwork, and fun!
           </h2>
         </div>
       </section>
@@ -105,7 +109,9 @@ export default function About() {
       {/* About section */}
       <section
         className="relative py-[80px] lg:py-[120px]"
-        style={{ background: "linear-gradient(180deg, #0D1117 0%, #0a0b0f 100%)" }}
+        style={{
+          background: "linear-gradient(180deg, #0D1117 0%, #0a0b0f 100%)",
+        }}
       >
         <div className="relative mx-auto flex max-w-[1180px] gap-0 px-[22px] lg:items-start lg:px-7">
           {/* Anchor chain — full-viewport sticky rail on desktop */}

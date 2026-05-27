@@ -6,8 +6,8 @@ const DAYS = [
     label: "Day one",
     date: "Friday, July 10",
     items: [
-      { time: "3:00pm", event: "Doors open", desc: "Check-in, set up base, chill before the opening ceremony." },
-      { time: "4:00pm", event: "Opening ceremony", desc: "Welcome, sponsors, kickoff." },
+      { time: "3:00pm", event: "Doors open", desc: "Check-in, say hello, chill before the opening ceremony." },
+      { time: "4:00pm", event: "Opening ceremony", desc: "Welcome, sponsors, kickoff!" },
       { time: "4:30pm", event: "Hacking begins", desc: "Form teams, brainstorm ideas." },
       { time: "7:00pm", event: "Dinner + lightning talks", desc: "Fuel up for the night ahead." },
     ],
@@ -17,7 +17,7 @@ const DAYS = [
     date: "Saturday, July 11",
     items: [
       { time: "8:00am", event: "Breakfast bar opens", desc: "Open Buffet for breakfast." },
-      { time: "10:00am", event: "Workshops", desc: "Fun workshops to level up your skills." },
+      { time: "10:00am", event: "Workshops", desc: "Fun workshops to learn something new." },
       { time: "1:00pm", event: "Lunch", desc: "Refuel and recharge." },
       { time: "7:00pm", event: "Dinner", desc: "Enjoy a hearty meal with fellow hackers." },
     ],
@@ -69,7 +69,7 @@ export default function Schedule() {
               className="relative z-10 font-serif text-4xl font-bold leading-[1.05] tracking-[-0.015em] lg:text-[clamp(34px,4.4vw,56px)]"
               style={{ maxWidth: "22ch" }}
             >
-              Three days, plotted on the chart.
+            It&apos;s going to be awesome.
             </h2>
           </div>
         <p className="mb-10 text-lg leading-relaxed" style={{ color: "#C1B3F7", maxWidth: "60ch" }}>
