@@ -1,6 +1,6 @@
 export const EVENT = {
   name: "Horizons Crux",
-  fullName: "Horizons Oceania 2026",
+  fullName: "Horizons Crux 2026",
   city: "Sydney",
   country: "Australia",
   dates: "July 10–12, 2026",
@@ -30,14 +30,14 @@ export const QUALIFY_STEPS = [
     number: "02",
     title: "Start Building",
     description:
-      "Create projects and upload them to Horizons. Anything counts: web, games, hardware, art.",
+      "Create projects and upload them to Horizons. Anything counts: web apps, games, hardware.",
     href: null,
   },
   {
     number: "03",
     title: "Track Your Hours",
     description:
-      "Your building time is automatically tracked as you ship projects on Horizons.",
+      "Your building time is automatically tracked with Hackatime as you ship projects on Horizons.",
     href: null,
   },
   {
@@ -55,62 +55,6 @@ export const QUALIFY_STEPS = [
     href: "https://horizons.hackclub.com/crux",
   },
 ] as const;
-
-export const BUILDING_COUNTS = [
-  "Coding projects (web, mobile, games, and more)",
-  "Design and creative work",
-  "Hardware and physical computing",
-  "Learning while building something real",
-];
-
-export const COVERED_ITEMS = [
-  { icon: "Plane", label: "Flight Stipends" },
-  { icon: "Bed", label: "Accommodation" },
-  { icon: "UtensilsCrossed", label: "All Meals" },
-  { icon: "Bus", label: "Local Transport" },
-  { icon: "Package", label: "Event Swag" },
-  { icon: "Trophy", label: "Awards" },
-] as const;
-
-export const SCHEDULE_DAYS = [
-  {
-    day: "Day 1",
-    date: "Friday, Jul 10",
-    events: [
-      "Arrive before 1 pm — check in and settle",
-      "Opening ceremony and team formation",
-      "Hacking begins",
-    ],
-  },
-  {
-    day: "Day 2",
-    date: "Saturday, Jul 11",
-    events: [
-      "Full build day",
-      "Mentorship sessions and workshops",
-      "Midnight snack run",
-    ],
-  },
-  {
-    day: "Day 3",
-    date: "Sunday, Jul 12",
-    events: [
-      "Final submissions by midday",
-      "Project demos and judging",
-      "Awards ceremony and departure",
-    ],
-  },
-] as const;
-
-export const PACK_LIST = [
-  "Laptop and charger",
-  "Sleeping bag",
-  "Toiletries (toothbrush, toothpaste, etc.)",
-  "Refillable water bottle",
-  "Passport and travel documents",
-  "Comfortable clothing — Sydney is winter in July, bring layers",
-  "Any necessary medication",
-];
 
 export const PAST_EVENTS = [
   {
@@ -142,10 +86,10 @@ export const PAST_EVENTS = [
     href: "https://undercity.hackclub.com",
   },
   {
-    name: "Kiwihacks",
+    name: "KiwiHacks",
     tagline: "Auckland · May 2026",
     blurb:
-      "KiwiHacks is New Zealand's biggest hackathon run by high schoolers, for high schoolers, bringing together 100+ student innovators together for a weekend of building, workshops, and mentorship.",
+      "KiwiHacks is New Zealand's biggest hackathon run by high schoolers, for high schoolers, where 100+ students enjoyed a weekend of building, workshops, and mentorship.",
     href: "https://kiwihacks.org",
   },
 ] as const;
