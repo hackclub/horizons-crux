@@ -75,7 +75,7 @@ export default function Covered() {
               className="text-[18px] leading-relaxed"
               style={{ color: "#C1B3F7", maxWidth: "44ch" }}
             >
-              Free food and merch, plus, work for flight stipends!
+              Free food, merch, and you can work for flight stipends!
             </p>
           </div>
 

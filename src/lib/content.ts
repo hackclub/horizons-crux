@@ -1,6 +1,6 @@
 export const EVENT = {
   name: "Horizons Crux",
-  fullName: "Horizons Oceania 2026",
+  fullName: "Horizons Crux 2026",
   city: "Sydney",
   country: "Australia",
   dates: "July 10–12, 2026",
@@ -30,14 +30,14 @@ export const QUALIFY_STEPS = [
     number: "02",
     title: "Start Building",
     description:
-      "Create projects and upload them to Horizons. Anything counts: web, games, hardware, art.",
+      "Create projects and upload them to Horizons. Anything counts: web apps, games, hardware.",
     href: null,
   },
   {
     number: "03",
     title: "Track Your Hours",
     description:
-      "Your building time is automatically tracked as you ship projects on Horizons.",
+      "Your building time is automatically tracked with Hackatime as you ship projects on Horizons.",
     href: null,
   },
   {
@@ -55,62 +55,6 @@ export const QUALIFY_STEPS = [
     href: "https://horizons.hackclub.com/crux",
   },
 ] as const;
-
-export const BUILDING_COUNTS = [
-  "Coding projects (web, mobile, games, and more)",
-  "Design and creative work",
-  "Hardware and physical computing",
-  "Learning while building something real",
-];
-
-export const COVERED_ITEMS = [
-  { icon: "Plane", label: "Flight Stipends" },
-  { icon: "Bed", label: "Accommodation" },
-  { icon: "UtensilsCrossed", label: "All Meals" },
-  { icon: "Bus", label: "Local Transport" },
-  { icon: "Package", label: "Event Swag" },
-  { icon: "Trophy", label: "Awards" },
-] as const;
-
-export const SCHEDULE_DAYS = [
-  {
-    day: "Day 1",
-    date: "Friday, Jul 10",
-    events: [
-      "Arrive before 1 pm — check in and settle",
-      "Opening ceremony and team formation",
-      "Hacking begins",
-    ],
-  },
-  {
-    day: "Day 2",
-    date: "Saturday, Jul 11",
-    events: [
-      "Full build day",
-      "Mentorship sessions and workshops",
-      "Midnight snack run",
-    ],
-  },
-  {
-    day: "Day 3",
-    date: "Sunday, Jul 12",
-    events: [
-      "Final submissions by midday",
-      "Project demos and judging",
-      "Awards ceremony and departure",
-    ],
-  },
-] as const;
-
-export const PACK_LIST = [
-  "Laptop and charger",
-  "Sleeping bag",
-  "Toiletries (toothbrush, toothpaste, etc.)",
-  "Refillable water bottle",
-  "Passport and travel documents",
-  "Comfortable clothing — Sydney is winter in July, bring layers",
-  "Any necessary medication",
-];
 
 export const PAST_EVENTS = [
   {
@@ -138,14 +82,14 @@ export const PAST_EVENTS = [
     name: "Undercity",
     tagline: "San Fransisco · July 2025",
     blurb:
-      "A hardware hackathon for high school builders. Solder, prototype, and ship real physical projects under one roof with 150 other hardware hackers.",
+      "A hardware hackathon for high school builders. Solder, prototype, and ship real physical projects alongside 150 other hardware hackers.",
     href: "https://undercity.hackclub.com",
   },
   {
-    name: "Kiwihacks",
+    name: "KiwiHacks",
     tagline: "Auckland · May 2026",
     blurb:
-      "KiwiHacks is New Zealand's biggest hackathon run by high schoolers, for high schoolers, bringing together 100+ student innovators together for a weekend of building, workshops, and mentorship.",
+      "KiwiHacks '26 is New Zealand's biggest hackathon run by high schoolers, for high schoolers, where 100+ students enjoyed a weekend of building, workshops, and mentorship.",
     href: "https://kiwihacks.org",
   },
 ] as const;
@@ -153,31 +97,31 @@ export const PAST_EVENTS = [
 export const FAQ_ITEMS = [
   {
     q: "How much does it cost?",
-    a: "Nothing. Horizons Crux is completely free to attend. We cover flights, accommodation, all meals, and local transport.",
+    a: "Nothing! We'll cover everything: food, local transport, accommodation, and flights!",
   },
   {
     q: "Who can attend?",
-    a: "High school students aged 13–18. You don't need to be from Australia, international attendees are welcome and we provide flight stipends.",
+    a: "Anyone aged 13–18. You don't need to be Australian - we've got flight stipends for international hackers.",
   },
   {
     q: "How do I qualify?",
-    a: "Spend 35 hours building projects on [horizons.hackclub.com](https://horizons.hackclub.com/?utm_source=crux-site) before June 30, 2026, then spend your hours to get a ticket to Horizons Crux. Your hours are tracked automatically with [Hackatime](https://hackatime.hackclub.com).",
+    a: "Build stuff on [horizons.hackclub.com](https://horizons.hackclub.com/?utm_source=crux-site) for 35 hours before June 30, 2026. [Hackatime](https://hackatime.hackclub.com) tracks your time automatically.",
   },
   {
     q: "Where do I sleep?",
-    a: "You'll sleep at the hackathon venue. Bring a sleeping bag!",
+    a: "At the venue. Bring a sleeping bag and anything else to make you comfortable!",
   },
   {
     q: "What should I pack?",
-    a: "A laptop and charger, sleeping bag, toiletries, a refillable water bottle, your passport and travel documents, and comfortable layers since Sydney is cold in July.",
+    a: "Laptop, charger, sleeping bag, toiletries, reusable water bottle, passport, and layers (Sydney's cold in July!)",
   },
   {
     q: "How do flight stipends work?",
-    a: "We provide stipends to help cover your travel costs. You can earn them at a rate of $8.5USD/hr for every hour you spend coding after the initial 35 required to qualify.",
+    a: "Earn $8.50USD per hour coding after you hit the 35-hour minimum. The more you build, the more you earn toward travel.",
   },
   {
     q: "Do I need a visa to travel to Australia?",
-    a: "It depends on your nationality. Check the Australian Department of Home Affairs website for requirements and apply early, processing can take time. Contact us if you need help.",
+    a: "Depends on where you're from. Check the [Australian Department of Home Affairs](https://immi.homeaffairs.gov.au) site and apply early. We can help if you get stuck.",
   },
   {
     q: "Can my parents come?",
@@ -185,11 +129,11 @@ export const FAQ_ITEMS = [
   },
   {
     q: "Do I need a team?",
-    a: "Nope! You can apply solo. We'll have time during Day 1 for team formation if you'd like to collaborate.",
+    a: "Nope! Come solo or find your team on day 1. We'll have time for team formation.",
   },
   {
     q: "How do I contact you?",
-    a: "Email [crux@horizons.hackclub.com](mailto:crux@horizons.hackclub.com), we'll help with anything from visa questions to team formation.",
+    a: "Reach out to us at [crux@horizons.hackclub.com](mailto:crux@horizons.hackclub.com). Visa questions, team advice, whatever! We're here :)",
   },
 ] as const;
 

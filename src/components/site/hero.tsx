@@ -67,8 +67,9 @@ export default function Hero() {
         </p>
 
         <p className="max-w-100 mb-[22px]">
-          A Hack Club flagship hackathon, in Sydney, Australia. Code for 35 hours
-          and come to Australia for 48 hours of learning, teamwork, and fun!
+          Join like-minded teens in Sydney, Australia for 48 hours of coding!
+          Build and ship something real over 48 hours - we'll cover food and
+          travel!
         </p>
 
         {/* CTA — self-start prevents stretching to full width */}
