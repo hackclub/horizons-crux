@@ -82,14 +82,14 @@ export const PAST_EVENTS = [
     name: "Undercity",
     tagline: "San Fransisco · July 2025",
     blurb:
-      "A hardware hackathon for high school builders. Solder, prototype, and ship real physical projects under one roof with 150 other hardware hackers.",
+      "A hardware hackathon for high school builders. Solder, prototype, and ship real physical projects alongside 150 other hardware hackers.",
     href: "https://undercity.hackclub.com",
   },
   {
     name: "KiwiHacks",
     tagline: "Auckland · May 2026",
     blurb:
-      "KiwiHacks is New Zealand's biggest hackathon run by high schoolers, for high schoolers, where 100+ students enjoyed a weekend of building, workshops, and mentorship.",
+      "KiwiHacks '26 is New Zealand's biggest hackathon run by high schoolers, for high schoolers, where 100+ students enjoyed a weekend of building, workshops, and mentorship.",
     href: "https://kiwihacks.org",
   },
 ] as const;

@@ -9,7 +9,7 @@ const CARD_STYLES: Record<string, { image: string }> = {
   Daydream: { image: asset("/art/ddsyd.png") },
   Midnight: { image: asset("/art/midnight.svg") },
   Undercity: { image: asset("/art/undercitylogo.svg") },
-  Kiwihacks: { image: asset("/art/kiwihacks.png") },
+  KiwiHacks: { image: asset("/art/kiwihacks.png") },
 };
 
 export default function PastEvents() {
