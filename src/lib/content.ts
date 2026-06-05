@@ -145,6 +145,14 @@ export const HACKCLUB = {
   students: "50,000+",
 } as const;
 
+export const SPONSORS = [
+  {
+    name: "GitHub",
+    url: "https://github.com",
+    logo: "/github-logo.png",
+  },
+] as const;
+
 export const NAV_LINKS = [
   { label: "About", href: "#about" },
   { label: "Qualify", href: "#qualify" },
