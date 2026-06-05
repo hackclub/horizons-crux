@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { HACKCLUB } from "@/lib/content";
+import { HACKCLUB, SPONSORS } from "@/lib/content";
 import { asset } from "@/lib/asset";
 
 const PLACEHOLDER_COUNT = 8;
@@ -52,42 +52,83 @@ export default function Sponsors() {
 
         {/* Sponsor CTA */}
         <div
-          className="grid items-center gap-8 rounded-[20px] px-[48px] py-[44px] lg:grid-cols-[1.4fr_auto]"
+          className="rounded-[20px] px-[48px] py-[44px]"
           style={{
             border: "1px solid rgba(193,178,247,0.18)",
             background:
               "rgba(30,30,92,0.4)",
           }}
         >
-          <div>
-            <h3
-              className="font-serif mb-2 font-bold leading-[1.1]"
+          <div className="grid items-center gap-8 mb-12 lg:grid-cols-[1.4fr_auto]">
+            <div>
+              <h3
+                className="font-serif mb-2 font-bold leading-[1.1]"
+                style={{
+                  fontSize: "clamp(24px,3vw,36px)",
+                  letterSpacing: "-0.01em",
+                  color: "#fff",
+                }}
+              >
+                Put your name on the weekend.
+              </h3>
+              <p className="m-0 text-base" style={{ color: "#C1B3F7" }}>
+                Title sponsorship, hardware partnerships, travel underwriting — let&apos;s talk. Every
+                contribution is tax-deductible in the US and helps support the next generation of builders.
+              </p>
+            </div>
+            <a
+              href="mailto:crux@horizons.hackclub.com"
+              className="self-start whitespace-nowrap rounded-full px-6 py-3 text-[15px] font-semibold transition-transform hover:-translate-y-0.5"
               style={{
-                fontSize: "clamp(24px,3vw,36px)",
-                letterSpacing: "-0.01em",
-                color: "#fff",
+                background: "#FF7AE2",
+                color: "#0D1117",
+                textDecoration: "none",
+                borderBottom: "none",
+                boxShadow: "none",
               }}
             >
-              Put your name on the weekend.
-            </h3>
-            <p className="m-0 text-base" style={{ color: "#C1B3F7" }}>
-              Title sponsorship, hardware partnerships, travel underwriting — let&apos;s talk. Every
-              contribution is tax-deductible in the US and helps support the next generation of builders.
-            </p>
+              Become a sponsor →
+            </a>
           </div>
-          <a
-            href="mailto:crux@horizons.hackclub.com"
-            className="self-start whitespace-nowrap rounded-full px-6 py-3 text-[15px] font-semibold transition-transform hover:-translate-y-0.5"
-            style={{
-              background: "#FF7AE2",
-              color: "#0D1117",
-              textDecoration: "none",
-              borderBottom: "none",
-              boxShadow: "none",
-            }}
-          >
-            Become a sponsor →
-          </a>
+
+          {/* Sponsors Grid */}
+          <div>
+            <p
+              className="mb-8 flex items-center gap-[10px] text-[12px] uppercase tracking-[0.22em]"
+              style={{ color: "#B9FFFF", fontWeight: 500 }}
+            >
+              Our Sponsors
+            </p>
+            <div className="flex flex-wrap gap-6">
+              {SPONSORS.map((sponsor) => (
+                <a
+                  key={sponsor.name}
+                  href={sponsor.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex flex-col items-center gap-4 rounded-[12px] px-8 py-8 transition-transform hover:scale-105"
+                  style={{
+                    border: "1px solid rgba(193,178,247,0.2)",
+                    background: "rgba(30,30,92,0.25)",
+                  }}
+                >
+                  <Image
+                    src={sponsor.logo}
+                    alt={sponsor.name}
+                    width={120}
+                    height={120}
+                    className="h-24 w-auto"
+                  />
+                  <span
+                    className="font-semibold text-lg"
+                    style={{ color: "#fff" }}
+                  >
+                    {sponsor.name}
+                  </span>
+                </a>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     </section>
