@@ -1,3 +1,8 @@
+# Horizons Crux
+
+A 48 hour hackathon happening in the heart of the Sydney CBD! 50 teen hackers from across the world will come together and make awesome projects
+
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app). 
 
 ## Getting Started
