@@ -1,0 +1,71 @@
+<mjml>
+    <mj-body>
+        <mj-section>
+            <mj-column>
+                <mj-text font-size="20px" font-weight="bold" color="#1a1a1a">
+                    {firstName}, Don't Miss Crux - RSVP by Friday!
+                </mj-text>
+            </mj-column>
+        </mj-section>
+
+        <mj-section>
+            <mj-column>
+                <mj-text color="#333">
+                    Hey {firstName}!
+                </mj-text>
+                
+                <mj-text color="#333">
+                    We wanted to remind you that the <strong>RSVP deadline for Crux is this Friday, June 26th at 11:59pm EST</strong>.
+                </mj-text>
+            </mj-column>
+        </mj-section>
+
+        <mj-section>
+            <mj-column>
+                <mj-text font-size="16px" font-weight="bold" color="#1a1a1a">
+                    Here's What's Changed
+                </mj-text>
+                
+                <mj-text color="#333">
+                    You no longer need to have your hours <strong>approved</strong> to get a ticket. Now you just need to have them <strong>submitted</strong>. This makes it way easier to secure your spot!
+                </mj-text>
+
+                <mj-text color="#666" font-size="14px">
+                    <em>Keep in mind:</em> While you only need submitted hours to RSVP, you'll still need to have your hours approved by the time the event rolls around to actually attend.
+                </mj-text>
+            </mj-column>
+        </mj-section>
+
+        <mj-section>
+            <mj-column>
+                <mj-button background-color="#0066cc" href="https://forms.hackclub.com/attending-crux" font-size="16px" padding="12px 30px">
+                    Fill Out the RSVP Form
+                </mj-button>
+            </mj-column>
+        </mj-section>
+
+        <mj-section>
+            <mj-column>
+                <mj-text color="#333">
+                    When filling out the form, please let us know if you're working toward the 35-hour requirement to attend but don't think you'll be able to hit the 20-hour submission threshold in time. We want to make sure we can help if you need it!
+                </mj-text>
+            </mj-column>
+        </mj-section>
+
+        <mj-section>
+            <mj-column>
+                <mj-text color="#666" font-size="14px">
+                    Questions? Reach out to the Crux team. We can't wait to see you there!
+                </mj-text>
+            </mj-column>
+        </mj-section>
+
+        <mj-section>
+            <mj-column>
+                <mj-text color="#666" font-size="14px">
+                    <a href="{unsubscribe_link}" style="color: #666; text-decoration: underline;">Unsubscribe</a>
+                </mj-text>
+            </mj-column>
+        </mj-section>
+    </mj-body>
+</mjml>
