@@ -2,20 +2,15 @@
     <mj-body>
         <mj-section>
             <mj-column>
-                <mj-text font-size="20px" font-weight="bold" color="#1a1a1a">
-                    {firstName}, Don't Miss Crux - RSVP by Friday!
-                </mj-text>
-            </mj-column>
-        </mj-section>
-
-        <mj-section>
-            <mj-column>
                 <mj-text color="#333">
                     Hey {firstName}!
                 </mj-text>
                 
                 <mj-text color="#333">
                     We wanted to remind you that the <strong>RSVP deadline for Crux is this Friday, June 26th at 11:59pm EST</strong>.
+                </mj-text>
+                <mj-text color="#333">
+                    (btw crux is our hackathon happening in Sydney from the 10th to 12th of July)
                 </mj-text>
             </mj-column>
         </mj-section>
@@ -55,7 +50,11 @@
         <mj-section>
             <mj-column>
                 <mj-text color="#666" font-size="14px">
-                    Questions? Reach out to the Crux team. We can't wait to see you there!
+                    Questions? Fill out the form and we'll get back to you soon! We can't wait to see you there!
+                </mj-text>
+                <mj-text color="#666" font-size="14px">
+                    - Taran <br>
+                    <em>If you are coming to crux, come say hi to me for something cool!</em>
                 </mj-text>
             </mj-column>
         </mj-section>
