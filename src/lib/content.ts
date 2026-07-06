@@ -151,6 +151,16 @@ export const SPONSORS = [
     url: "https://github.com",
     logo: "/github-logo.png",
   },
+  {
+    name: "EasyEDA",
+    url: "https://easyeda.com",
+    logo: "/easyeda-logo.png",
+  },
+  {
+    name: "JLCPCB",
+    url: "https://jlcpcb.com",
+    logo: "/jlcpcb-logo.svg",
+  },
 ] as const;
 
 export const NAV_LINKS = [

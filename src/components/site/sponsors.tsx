@@ -115,9 +115,9 @@ export default function Sponsors() {
                   <Image
                     src={sponsor.logo}
                     alt={sponsor.name}
-                    width={120}
-                    height={120}
-                    className="h-24 w-auto"
+                    width={160}
+                    height={80}
+                    className="h-12 w-32 object-contain"
                   />
                   <span
                     className="font-semibold text-lg"
