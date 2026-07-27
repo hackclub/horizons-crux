@@ -161,6 +161,11 @@ export const SPONSORS = [
     url: "https://jlcpcb.com",
     logo: "/jlcpcb-logo.svg",
   },
+  {
+    name: "Logitech",
+    url: "https://logitech.com",
+    logo: "/logitech-logo.png",
+  },
 ] as const;
 
 export const NAV_LINKS = [
