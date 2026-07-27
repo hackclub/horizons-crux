@@ -40,12 +40,12 @@ export default function Sponsors() {
               className="font-serif m-0 text-4xl font-bold leading-[1.05] tracking-[-0.015em] lg:text-[clamp(34px,4.4vw,56px)]"
               style={{ maxWidth: "22ch" }}
             >
-              The folks who make it free.
+              The folks who made it free.
             </h2>
           </div>
           <p className="pb-2 text-[17px] leading-[1.65]" style={{ color: "#C1B3F7" }}>
             {HACKCLUB.name} is a{" "}
-            <b style={{ color: "#fff" }}>{HACKCLUB.nonprofit}</b>. Every dollar raised goes
+            <b style={{ color: "#fff" }}>{HACKCLUB.nonprofit}</b>. Every dollar raised went
             directly into stipends, accommodation, food, and swag for the hackers in the room.
           </p>
         </div>

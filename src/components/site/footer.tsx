@@ -38,9 +38,6 @@ export default function Footer() {
             <ul className="m-0 flex list-none flex-col gap-[10px] p-0">
               {[
                 { label: "About", href: "#about" },
-                { label: "How to qualify", href: "#qualify" },
-                { label: "Schedule", href: "#schedule" },
-                { label: "FAQ", href: "#faq" },
               ].map(({ label, href }) => (
                 <li key={href}>
                   <a

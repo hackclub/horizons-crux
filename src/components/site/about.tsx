@@ -3,7 +3,7 @@ import { asset } from "@/lib/asset";
 
 const SECTIONS = [
   {
-    title: "What is a hackathon.",
+    title: "What was the hackathon?",
     body: (
       <>
         <p className="m-0 mb-3">
@@ -11,20 +11,20 @@ const SECTIONS = [
           scratch with a group of strangers who quickly become friends.
         </p>
         <p className="m-0">
-          At Horizons Crux, you&apos;ll have around 48 hours to make a project,
-          then show everyone what you made. You&apos;ll leave with a project
-          anyone can demo, and you get to tell people that you built it
-          yourself.
+          At Horizons Crux, attendees had around 48 hours to make a project,
+          then showed everyone what they made. They left with a project
+          anyone can demo, and get to tell people that they built it
+          themselves.
         </p>
       </>
     ),
   },
   {
-    title: "Who can attend.",
+    title: "Who attended.",
     body: (
       <>
         <p className="m-0 mb-3">
-          Any high school student (aged 13-18) who&apos;s logged{" "}
+          Any high school student (aged 13-18) who logged{" "}
           <b style={{ color: "#B9FFFF", fontWeight: 600 }}>35 hours</b> building
           projects on{" "}
           <a
@@ -38,23 +38,23 @@ const SECTIONS = [
           .
         </p>
         <p className="m-0">
-          Crux is open to students of all experience levels! We&apos;ll have
+          Crux was open to students of all experience levels! We had
           workshops to teach beginners how to make games, websites, and more!
         </p>
       </>
     ),
   },
   {
-    title: "What you can get.",
+    title: "What they got.",
     body: (
       <>
         <p className="m-0 mb-3">
-          Your food and accommodation are{" "}
+          Their food and accommodation were{" "}
           <b style={{ color: "#B9FFFF", fontWeight: 600 }}>fully covered</b> by
           Hack Club, a 501(c)(3) nonprofit.
         </p>
         <p className="m-0">
-          You&apos;ll leave with a project you&apos;re proud of, a network of
+          They left with a project they were proud of, a network of
           teenage builders from across the globe, and the experience of shipping
           something real under the pressure of the clock.
         </p>
@@ -90,7 +90,7 @@ export default function About() {
             >
               Australia
             </mark>
-            . Code for{" "}
+            . We coded for{" "}
             <mark
               style={{
                 background: "rgba(185, 255, 255, 0.15)",
@@ -101,7 +101,7 @@ export default function About() {
             >
               35 hours
             </mark>
-            {" "}and come to Australia for 48 hours of learning, teamwork, and fun!
+            {" "}and came to Australia for 48 hours of learning, teamwork, and fun!
           </h2>
         </div>
       </section>
@@ -152,7 +152,7 @@ export default function About() {
                 className="m-0 text-[17px] leading-[1.7]"
                 style={{ color: "#C1B3F7", maxWidth: "58ch" }}
               >
-                Build for 35 hours, get a free trip to Sydney. Horizons Crux is
+                Built for 35 hours, got a free trip to Sydney. Horizons Crux was
                 a fully-funded 3-day hackathon run by Hack Club, a 501(c)(3)
                 nonprofit.
               </p>

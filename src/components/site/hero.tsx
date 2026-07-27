@@ -67,27 +67,11 @@ export default function Hero() {
         </p>
 
         <p className="max-w-100 mb-[22px]">
-          Join like-minded teens in Sydney, Australia for 48 hours of coding!
-          Build and ship something real over 48 hours - we'll cover food and
-          travel!
+          30+ attendees joined like-minded teens in Sydney, Australia for 48 hours of coding!
+          They built and shipped projects over 48 hours!
         </p>
 
-        {/* CTA — self-start prevents stretching to full width */}
-        <a
-          href={EVENT.applyUrl}
-          target="_blank"
-          rel="noreferrer"
-          className="shrink-0 rounded-full px-6 py-3 text-[15px] font-semibold transition-transform hover:-translate-y-0.5 active:scale-[0.98]"
-          style={{
-            background: "#FF7AE2",
-            color: "#0D1117",
-            textDecoration: "none",
-            borderBottom: "none",
-            boxShadow: "none",
-          }}
-        >
-          Sign up! →
-        </a>
+
       </div>
     </section>
   );

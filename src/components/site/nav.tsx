@@ -7,11 +7,8 @@ import { asset } from "@/lib/asset";
 
 const NAV_ITEMS = [
   { id: "about", label: "About" },
-  { id: "qualify", label: "Qualify" },
-  { id: "schedule", label: "Schedule" },
   { id: "sponsors", label: "Sponsors" },
   { id: "past", label: "Past events" },
-  { id: "faq", label: "FAQ" },
 ];
 
 export default function Nav() {
@@ -68,7 +65,7 @@ export default function Nav() {
 
         {/* Desktop CTA */}
         <a
-          href={EVENT.applyUrl}
+          href="https://hackclub.com"
           target="_blank"
           rel="noreferrer"
           className="hidden shrink-0 items-center justify-center rounded-full px-[18px] py-[9px] text-sm font-semibold transition-transform hover:-translate-y-0.5 md:inline-flex"
@@ -80,7 +77,7 @@ export default function Nav() {
             boxShadow: "none",
           }}
         >
-          Start qualifying
+          View Hack Club
         </a>
 
         {/* Mobile toggle */}
