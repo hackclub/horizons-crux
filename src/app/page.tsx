@@ -37,7 +37,7 @@ export default function Home() {
       <main>
         <Hero />
         <section className="py-20 px-6 max-w-6xl mx-auto w-full space-y-24">
-          <div>
+          <div id="projects">
             <h1 className="text-5xl md:text-6xl font-extrabold mb-6 text-center text-white tracking-tight">
               Check out what Hack Clubbers made
             </h1>

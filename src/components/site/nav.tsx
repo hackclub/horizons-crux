@@ -6,9 +6,8 @@ import { EVENT } from "@/lib/content";
 import { asset } from "@/lib/asset";
 
 const NAV_ITEMS = [
-  { id: "about", label: "About" },
+  { id: "projects", label: "Projects" },
   { id: "sponsors", label: "Sponsors" },
-  { id: "past", label: "Past events" },
 ];
 
 export default function Nav() {
