@@ -50,7 +50,7 @@ export default function Sponsors() {
           </p>
         </div>
 
-        {/* Sponsor CTA */}
+        {/* Sponsors Container */}
         <div
           className="rounded-[20px] px-[48px] py-[44px]"
           style={{
@@ -59,38 +59,6 @@ export default function Sponsors() {
               "rgba(30,30,92,0.4)",
           }}
         >
-          <div className="grid items-center gap-8 mb-12 lg:grid-cols-[1.4fr_auto]">
-            <div>
-              <h3
-                className="font-serif mb-2 font-bold leading-[1.1]"
-                style={{
-                  fontSize: "clamp(24px,3vw,36px)",
-                  letterSpacing: "-0.01em",
-                  color: "#fff",
-                }}
-              >
-                Put your name on the weekend.
-              </h3>
-              <p className="m-0 text-base" style={{ color: "#C1B3F7" }}>
-                Title sponsorship, hardware partnerships, travel underwriting — let&apos;s talk. Every
-                contribution is tax-deductible in the US and helps support the next generation of builders.
-              </p>
-            </div>
-            <a
-              href="mailto:crux@horizons.hackclub.com"
-              className="self-start whitespace-nowrap rounded-full px-6 py-3 text-[15px] font-semibold transition-transform hover:-translate-y-0.5"
-              style={{
-                background: "#FF7AE2",
-                color: "#0D1117",
-                textDecoration: "none",
-                borderBottom: "none",
-                boxShadow: "none",
-              }}
-            >
-              Become a sponsor →
-            </a>
-          </div>
-
           {/* Sponsors Grid */}
           <div>
             <p

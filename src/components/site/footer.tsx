@@ -100,15 +100,7 @@ export default function Footer() {
                   {EVENT.email}
                 </a>
               </li>
-              <li>
-                <a
-                  href="#sponsors"
-                  className="text-[15px] transition-colors hover:text-white"
-                  style={{ color: "#C1B3F7", textDecoration: "none", borderBottom: "none" }}
-                >
-                  Sponsor us
-                </a>
-              </li>
+
             </ul>
           </div>
         </div>
